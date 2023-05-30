@@ -1,12 +1,13 @@
 from magasin import Magasin
 from produit import Produit
 from clavier import Clavier
+from habit import Habit
 from os import system
 mag=Magasin()
 choix=0
-while choix!=6:
+while choix!=7:
     system("cls")
-    choix=Clavier.getInt("1. Ajouter\n2. Afficher\n3. Enregistrer\n4. Ouvrir\n5. Chercher\n6. Quitter\nTapez votre choix : ")
+    choix=Clavier.getInt("1. Ajouter\n2. Afficher\n3. Enregistrer\n4. Ouvrir\n5. Chercher\n6. Ajouter Habit\n7 Quitter\nTapez votre choix : ")
     if choix==1:
         mag.ajouter(Clavier.getProduit())
         # id=int(input("Tapez l'id du produit ? "))
@@ -14,6 +15,8 @@ while choix!=6:
         # prix= float(input("Tapez le prix du produit ? "))
         # pr=Produit(id,desig,prix)
         # mag.ajouter(pr)
+               
+
     elif choix==2:
         mag.afficher()
         system("pause")
@@ -33,3 +36,5 @@ while choix!=6:
         else:
             print("Aucun produit de la liste ne possède cet Id !!!")
         system("pause")
+    elif choix==6:
+        mag.ajouter(Clavier.getHabit())

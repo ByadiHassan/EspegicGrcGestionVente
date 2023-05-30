@@ -24,7 +24,6 @@ class Magasin:
                 existance=True
                 break
         return existance
-
     def chercher(self,id):
         pr=None
         for produit in self.__produits:
