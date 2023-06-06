@@ -11,6 +11,8 @@ FormPrincipal()
 
 
 
+
+
 # from magasin import Magasin
 # from produit import Produit
 # from clavier import Clavier
