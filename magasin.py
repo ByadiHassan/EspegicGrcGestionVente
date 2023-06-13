@@ -3,6 +3,7 @@ import pickle
 class Magasin:
     def __init__(self):
         self.__produits=list()
+        
     def getProduits(self):
         return self.__produits
     def setProduit(self,produits):
